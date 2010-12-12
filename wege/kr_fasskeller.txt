@@ -1,0 +1,35 @@
+#/usr/bin/perl
+# Fasskeller-Anfahrt.pl
+# Implementation aus Richtung Duisburg/Wesel:
+
+use car_driving;
+
+fahre_autobahn('A57')->abfahrt('Krefeld-Gartenstadt');
+richtung('Krefeld');
+foreach(@strassenschilder){ # Schleife läuft ca. 4000 Meter
+  die 'verfranst' unless /Nordtangente|(Europa-|Nassauer
+  |Oranier-)Ring)/;
+    last if rechte_seite_gucken eq 'Media Markt';
+    }
+
+    fahre_weiter('2 Ecken');
+    $_=querstrasse->strassenname();
+    die 'verfranst' unless /Hülser Str./;
+
+    if($mutig){
+      abbiegen('links');
+      }else{
+        # siehe: perldoc StVo
+	  fahre_weiter('1 Ecke');
+	    wenden();
+	      fahre_weiter('1 Ecke');
+	        abbiegen('rechts');
+		}
+
+		foreach(@strassenschilder){ # Schleife läuft ca. 200 Meter
+		  die 'verfranst' unless /Hülser Str./;
+		    last if rechte_seite_gucken eq 'Diebels Fasskeller';
+		    }
+
+parken(); # muss selber implementiert werden
+

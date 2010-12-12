@@ -1,0 +1,49 @@
+td.nav {
+        background : #D0FFD0;
+        font-family : monospace;
+}
+p.nav {
+        background : #D0FFD0;
+        font-family : monospace;
+}
+td.inhalt {
+	background : #FFFFFF;
+	font-family : Arial, Helvetica, sans-serif;
+}
+a.nav, a:LINK.nav {
+        color : #C04040;
+        text-decoration : none;
+        font-weight : bold;
+}
+a:FOCUS.nav, a:HOVER.nav, a:ACTIVE.nav {
+        background : #FFFF00;
+        text-decoration : none;
+}
+a:visited.nav {
+        color : #C04040;
+        text-decoration : none;
+
+}
+
+.imp {
+	font-weight : bold;
+	background : Yellow;
+}
+a.inhalt, a:LINK.inhalt {
+	background : #D0D0D0;
+	color : #C04040;
+	font-weight : bold;
+    text-decoration : none;
+}
+a:VISITED.inhalt {
+         background : #D0D0D0;
+         color : Black;
+    text-decoration : none;
+}
+
+a:ACTIVE.inhalt, a:FOCUS.inhalt, a:HOVER.inhalt {
+	background : #C04040;
+	color : #D0D0D0;
+	font-weight : bold;
+    text-decoration : none;
+}
